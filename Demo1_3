@@ -1,0 +1,8 @@
+import sys
+from PySide6.QtWidget import QApplication, QWidget
+
+app = QApplication(sys.argv)
+myWindow = QWidget()
+myWindow.show()
+n = app.exec() # 开始窗口的事件循环，单击窗口右上角或者因程序崩溃而退出，都将引发关闭窗口函数（close ALLWindows()）,这时app的方法exec()会返回一个整数，如果这个整数是0，则表示正常退出，如果非0，则表示非正常退出。
+sys.exit(n)
