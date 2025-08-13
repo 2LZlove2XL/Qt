@@ -7,7 +7,7 @@ class MyUi():
 
     self.label = QLabel(window)
     self.label.setText('欢迎使用本书学习编程')
-    self.setGeometry(80,50,150,20)
+    self.label.setGeometry(80,50,150,20)
 
     self.button = QPushButton(window)
     self.button.setText("关闭")
