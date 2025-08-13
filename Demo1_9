@@ -7,7 +7,7 @@ def myWidget(parent = None):
   widget = QWidget(parent)
   ui = MyUi()
   ui.setupUi(widget)
-  ui.buttton.clicked.connnect(widget.close)
+  ui.button.clicked.connnect(widget.close)
 
   return widget
 
