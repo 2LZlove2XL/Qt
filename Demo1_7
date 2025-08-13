@@ -1,1 +1,14 @@
+from Pyside6.QtWidgets import QLabel,QPushButton
 
+class MyUi():
+  def setupUi(self,window):
+    window.setWindowTitle('Hello')
+    window.resize(300,150)
+
+    self.label = QLabel(window)
+    self.label.setText('欢迎使用本书学习编程')
+    self.setGeometry(80,50,150,20)
+
+    self.button = QPushButton(window)
+    self.button.setText("关闭")
+    self.button.setGeometry(120,100,50,20)
