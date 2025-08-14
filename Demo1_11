@@ -1,9 +1,9 @@
 import sys
-from PySide6.QtWidget import QApplication, QWidget
+from PySide6.QtWidgets import QApplication, QWidget
 from myUi import MyUi
 
 class MyWidget(QWidget,MyUi):
-  def __init__(self,parent = None)
+  def __init__(self,parent = None):
     super().__init__(parent)
     self.setupUi(self)
     self.button.setText("Close")
