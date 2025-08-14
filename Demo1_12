@@ -1,0 +1,15 @@
+import sys
+from PySide6.QtWidgets import QApplication, QWidget, QLabel, QPushButton
+
+class MyWidget(QWidget,MyUi):
+  def __init__(self,parent = None):
+    super().__init__(parent)
+    self.setupUi(self)
+    self.button.setText("Close")
+    self.button.clicked.connect(self.close)
+
+if __name__ == "__main__":
+  app = QApplication(sys.argv)
+  myWindow = MyWidget()
+  myWindow.show()
+  sys.exit(app.exec())
