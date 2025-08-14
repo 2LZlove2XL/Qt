@@ -4,10 +4,10 @@ from myUi import MyUi
 
 class MyWidget(QWidget,MyUi):
   def __init__(self,parent = None)
-  super().__init__(parent)
-  self.setupUi(self)
-  self.button.setText("Close")
-  self.button.clicked.connect(self.close)
+    super().__init__(parent)
+    self.setupUi(self)
+    self.button.setText("Close")
+    self.button.clicked.connect(self.close)
 
 if __name__ == "__main__":
   app = QApplication(sys.argv)
