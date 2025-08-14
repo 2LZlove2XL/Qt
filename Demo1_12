@@ -8,6 +8,18 @@ class MyWidget(QWidget,MyUi):
     self.button.setText("Close")
     self.button.clicked.connect(self.close)
 
+  def setupUi(self):
+    self.setWindowTitle('Hello')
+    self.resize(300,150)
+
+    self.label = QLabel(self)
+    self.label.setText('欢迎使用本书学习编程')
+    self.label.setGeometry(80,50,150,20)
+
+    self.button = QPushButton(self)
+    self.button.setText("关闭")
+    self.button.setGeometry(120,100,50,20)
+
 if __name__ == "__main__":
   app = QApplication(sys.argv)
   myWindow = MyWidget()
